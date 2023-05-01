@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
 
-type CustomFooterPorps = {
-	about_freshlemon: string;
-	help_center: string;
-	privacy_policy: string;
-};
-
 export const CustomFooter = () => {
 	return (
 		<div class="bg-white w-[305px] max-h-[123px] rounded-xl ">
