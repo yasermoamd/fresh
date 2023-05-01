@@ -1,7 +1,3 @@
-type CategoryCardProps = {
-	category_name: string;
-	recipe_length: number;
-};
 export const CategoryCard = () => {
 	return (
 		<div class="bg-white rounded-t-2xl rounded-b-2xl pb-2 w-[183px] h-[231px]">

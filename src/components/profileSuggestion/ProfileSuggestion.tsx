@@ -1,9 +1,3 @@
-type ProfileItemProps = {
-	fullname: string;
-	recipes: number;
-	followers: number;
-};
-
 const ProfileItem = () => {
 	return (
 		<div class="">
