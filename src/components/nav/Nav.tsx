@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
 	return (
-		<div class="bg-[#30BE76] h-[50px] lg:p-4 hidden lg:flex md:flex items-center justify-around">
+		<div class="bg-[#30BE76] h-[50px] lg:p-4 lg:flex md:flex items-center justify-around">
 			<div class="flex items-center gap-2 justify-center">
 				<img
 					class="mt-2"

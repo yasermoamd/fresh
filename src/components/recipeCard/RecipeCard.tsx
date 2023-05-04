@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import {useState} from "preact/hooks";
+import {AiOutlineCloseCircle} from "react-icons/ai";
 
 type CreateRecipeProps = {
 	first_name: string;
@@ -13,9 +15,10 @@ type CreateRecipeProps = {
 };
 
 export const RecipeCard = (props: CreateRecipeProps) => {
+	 const [showSaveBtn, setShowSaveBtn] = useState(false);
 	return (
 		<div
-			class="bg-white w-[581px] h-[398px] rounded-md  mt-6"
+			class="bg-white w-[481px] h-[398px] rounded-md  mt-6"
 			id="portal"
 		>
 			<div
@@ -50,15 +53,20 @@ export const RecipeCard = (props: CreateRecipeProps) => {
 			</div>
 			<div class="flex flex-col bg-white">
 				<div class="flex justify-between items-center mx-8 my-4">
-					<div class="font-semibold text-[18px] leading-[32px] font-serif text-[#030F09]">
-						{props.recipe_title}
+					<div class="font-semibold text-[18px] leading-[32px] font-serif text-[#030F09] cursor-pointer hover:underline hover:underline-offset-8">
+						<Link to={"#"}>{props.recipe_title}</Link>
 					</div>
-					<div class="">
+					<div class="" onClick={() => setShowSaveBtn(!showSaveBtn)}>
 						<img
 							src="/icon/like_shape.svg"
 							class="w-[25px] h-[25px]"
 							alt={`${props.recipe_title}`}
 						/>
+						<div>
+							{
+								showSaveBtn ? <SaveButton /> : null
+							}
+						</div>
 					</div>
 				</div>
 				<div class="mx-8 font-normal text-[14px] leading-[22px] font-serif text-[#A8A8A8]">
@@ -97,3 +105,13 @@ export const RecipeCard = (props: CreateRecipeProps) => {
 		</div>
 	);
 };
+
+function SaveButton() {
+	return (
+		<div class="absolute top-[14rem] left-[33rem] bg-white w-[286px] h-[254px] rounded-md">
+			<div class="flex justify-end my-2 mx-4">
+				<AiOutlineCloseCircle class="w-6 h-6" />
+			</div>
+		</div>
+	)
+}

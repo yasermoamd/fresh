@@ -3,12 +3,8 @@ import { Link } from "react-router-dom";
 export const Home = () => {
 	return (
 		<>
-			<div
-				id="portal"
-				class="bg-contain"
-				style="background-image: url(/img/bg_fruits.jpg)"
-			>
-				<div class="lg:absolute lg:top-[20rem] top-[10rem] left-28 mx-14 py-4">
+			<div id="portal" class="lg:bg-contain bg-contain bg-home_bg">
+				<div class="lg:absolute top-[10rem] left-10 mx-14 py-4">
 					<div class="grid content-start md:content-around">
 						<div class="flex flex-col">
 							<span class="text-[40px]">
@@ -30,7 +26,7 @@ export const Home = () => {
 										to="/signup"
 										class="border-none"
 									>
-										Join Freshlemon
+										Join Fresh
 									</Link>
 								</div>
 							</Link>
