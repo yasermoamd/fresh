@@ -80,7 +80,7 @@ export const Signin = () => {
 							<input
 								type="submit"
 								class="bg-[#30BE76] text-white rounded-xl w-[270px] h-[50px] text-[16px] font-bold ml-6"
-								value="Create an account"
+								value="Login"
 							/>
 							<p class="text-[#A8A8A8] text-center">
 								New to Scratch? <br />{" "}

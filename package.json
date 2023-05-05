@@ -12,7 +12,8 @@
     "preact": "^10.13.1",
     "preact-router": "^4.1.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.11.0"
+    "react-router-dom": "^6.11.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
